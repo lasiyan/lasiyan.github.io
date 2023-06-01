@@ -50,7 +50,7 @@ tag:
 
 본문. 이 글씨를 **강조** 해주세요.
 
-![avatar](/img/avatar_only_profile_square.png)
+![avatar](/avatar/img/avatar.jpg)
 
 {: .image-right}
 
