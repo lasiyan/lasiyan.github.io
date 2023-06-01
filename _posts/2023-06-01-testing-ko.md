@@ -37,7 +37,7 @@ tag: [testing-ko]
 
 본문. 이 글씨를 **강조** 해주세요.
 
-![avatar](/avatar/img/avatar.jpg)
+![avatar](/assets/img/avatar.jpg)
 
 {: .image-right}
 
