@@ -93,3 +93,5 @@ This work is published under [MIT][mit] License.
 [jetbrains]: https://www.jetbrains.com/?from=jekyll-theme-chirpy
 [donation]: https://sponsor.cotes.page/
 [mit]: https://github.com/cotes2020/jekyll-theme-chirpy/blob/master/LICENSE
+
+# Rowen Oh
