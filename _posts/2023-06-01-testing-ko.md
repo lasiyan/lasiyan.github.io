@@ -1,21 +1,8 @@
 ---
-
-layout: post  
-title: "Github Page 한글 마크다운 테스트 포스팅"  
-date: 2017-09-27  
-author : "Lenir"  
-multilingual: false  
-catalog: true  
-tag:
-
--   한글 테스트
--   포스팅 테스트
--   마크다운
--   테스트
--   Markdown
--   Test  
-    comments: true
-
+layout: post
+title: Testing 국문
+categories: [testing, SUB]
+tag: [testing-ko]
 ---
 
 ## 개요
