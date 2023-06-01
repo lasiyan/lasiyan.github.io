@@ -3,6 +3,7 @@ layout: post
 title: Testing 국문
 categories: [testing, SUB]
 tag: [testing-ko]
+published: false
 ---
 
 ## 개요
@@ -77,6 +78,18 @@ tag: [testing-ko]
 | {: rules="groups"} |   |   |
 
 ## 코드 스니펫
+
+마크다운 문법
+
+```css
+#container {  
+float: left;
+margin: 0 -240px 0 0;
+width: 100%;
+}
+```
+
+하이라이트 적용
 
 {% highlight css %}  
 #container {  
