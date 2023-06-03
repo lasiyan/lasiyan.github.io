@@ -36,9 +36,9 @@ Chirpy 테마 기반의 Github 블로그 개발을 진행하면서 문제가 발
 
 ## GitHub 준비하기
 ---
-GitHub 기반 블로그는 GitHub Repository를 기반으로 동작합니다. 따라서 저장소를 만들기 위하여 GitHub 가입 및 Repository를 생성합니다.
+GitHub 블로그는 GitHub Repository(Page)를 기반으로 동작합니다. 따라서 저장소를 만들기 위하여 GitHub 가입을 진행하고 Repository를 생성하여야 합니다.
 
-여기서 주의할 점은 Repository 이름은 반드시 `사용자이름.github.io` 로 생성하여야 합니다.
+여기서 주의할 점은 Repository 이름을 반드시 `사용자이름.github.io` 로 생성하여야 합니다.
 
 ![create-repository](/assets/img/post/2023-06-02-GitBlog_Basic_1/repo_create.png)
 
@@ -53,7 +53,7 @@ VS Code를 사용하는 이유는 다음과 같습니다.
 
 1. Github와 연동이 편리하다.
 2. Markdown 관련 다양한 확장을 지원한다.
-3. (필자의 경우) 원격 개발이 가능하다.
+3. (필자의 경우) 원격 개발을 지원한다.
 4. 다들 많이 쓰는 편집기라서 ...
 
 서두에 적힌 것과 같이 VSCode가 아닌 다른 편집기를 사용하여도 무관합니다.
@@ -78,9 +78,11 @@ Repository 주소는 `https://github.com/lasiyan/lasiyan.github.io.git` 와 같�
 
 ![clone-repository-after](/assets/img/post/2023-06-02-GitBlog_Basic_1/repo_clone_after.png)
 
+> Commit 간 에러가 발생하는 경우가 있습니다. Show Git Log와 같은 버튼을 클릭하면 에러 내역을 볼 수 있습니다. 대부분의 경우 Git 정보가 등록되어 있지 않기 때문입니다. git config를 통해 user.email, user.name 등을 등록하면 정상적으로 Commit이 진행됩니다.
+
 
 ## Ruby 설치하기
-
+---
 현재 Repository는 비어있습니다. 우리는 여기에 Jekyll 기반 테마를 설치할 것입니다.
 
 Jekyll 테마는 Ruby 언어를 기반으로 구현되어 있기 때문에 먼저 Ruby를 설치해야 합니다.
@@ -122,4 +124,4 @@ $ gem install webrick  # for Windows or older ruby version
 ```
 
 이로서 Ruby 및 관련 패키지가 설치되었습니다. 
-다음 장에서 테마 설치 및 초기 설정에 관하여 포스팅 하겠습니다.
+다음 글에서 테마 설치 및 초기 설정에 관하여 포스팅 하겠습니다.
