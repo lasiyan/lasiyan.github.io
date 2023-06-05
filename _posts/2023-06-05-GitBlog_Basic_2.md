@@ -35,7 +35,7 @@ Starter 방식의 경우 가장 빠르고 쉽게 블로그를 생성할 수 있�
 
 `assets/js/dis/misc.min.js` 등 파일이 존재하지 않는다는 에러와 함께 `theme color toggle`, 글의 `Top of Content` 기능 등이 동작하지 않았습니다.
 
-결과적으로 init이 진행하지 않았기 때문이었습니다.
+결과적으로 init을 진행하지 않았기 때문이었습니다.
 
 > Build JavaScript files and export to assets/js/dist/, then make them tracked by Git.
 
@@ -60,7 +60,7 @@ init 과정이 해당 포스트를 작성한 이유입니다.
 
 1. starter 방식 : 해당 과정이 필요 없음
 
-2. zip 방식 : init 실행 시 github 관련 정보가 연동되지 않는 것처럼 보임.  
+2. zip 다운로드 방식 : init 실행 시 github 관련 정보가 연동되지 않는 것처럼 보임.  
 --no-gh 옵션을 추가해봤지만 정상적으로 동작되지 않았음
 
 3. fork 방식
