@@ -1,10 +1,15 @@
 ---
 layout: post
 title: Testing 영문
-categories: [testing, SUB]
-tag: [testing-en]
-published: false
+categories:
+  - testing
+  - SUB
+tag:
+  - testing-en
+published: true
 ---
+
+TESTING POST
 
 # h1 Heading 8-)
 
