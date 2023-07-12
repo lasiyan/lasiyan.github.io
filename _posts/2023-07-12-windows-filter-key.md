@@ -1,8 +1,12 @@
 ---
 title: 윈도우 필터키 프로그램 (for. 메이플스토리)
-date: 2023-07-12 16:07:00 +0900
-categories: [etc., Windows]
-tag: [filter-key]
+date: '2023-07-12 16:07:00 +0900'
+categories:
+  - etc.
+  - Windows
+tag:
+  - filter-key
+published: true
 ---
 # Filter Key Setting
 윈도우 환경에서 필터키 설정을 간편하게 도와줍니다 !
@@ -14,6 +18,9 @@ tag: [filter-key]
 아래 GitHub에 프로그램 소스 코드가 배포되어 있습니다.
 다운로드가 불안하신 분들은 해당 소스 코드로 빌드 후 사용하여도 무관합니다.
 > 제가 올리고 제가 다운 받아도 차단됩니다......
+
+`삭제` 또는 `차단` 주변 조그만 화살표를 눌러 `계속`을 선택하시면 다운로드가 가능합니다.
+
 
 다운로드(exe) : [FilterKeySetting.exe](https://github.com/lasiyan/Filter-Key-Setting/releases/download/v2.0.0/FilterKeySetting.exe)  
 다운로드(zip) : [FilterKeySetting.zip](https://github.com/lasiyan/Filter-Key-Setting/releases/download/v2.0.0/FilterKeySetting.zip)  
