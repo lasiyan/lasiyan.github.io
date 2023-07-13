@@ -5,7 +5,7 @@ categories: [etc., GitHub]
 tag: [github-blog]
 ---
 
-## 들어가기에 앞서 ...
+## 들어가기에 앞서 ..
 ---
 
 Chirpy 테마 기반의 Github 블로그 개발을 진행하면서 문제가 발생하였던 부분을 기록합니다.
