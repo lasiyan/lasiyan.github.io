@@ -1,13 +1,10 @@
 ---
 title: 윈도우 필터키 프로그램 (for. 메이플스토리)
 date: '2023-07-12 16:07:00 +0900'
-categories:
-  - etc.
-  - Windows
-tag:
-  - filter-key
-published: true
+categories: [etc., Utility]
+tag: [Filter Key Setting, 필터키, 메이플스토리]
 ---
+
 # Filter Key Setting
 윈도우 환경에서 필터키 설정을 간편하게 도와줍니다 !
 
