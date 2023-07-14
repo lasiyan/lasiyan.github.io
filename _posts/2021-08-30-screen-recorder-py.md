@@ -1,6 +1,6 @@
 ---
 title: 화면 녹화 프로그램 - Python, OpenCV
-date: 2023-07-13 16:45:00 +0900
+date: 2021-08-30 03:13:00 +0900
 categories: [etc., Utility]
 tag: [화면 녹화, 파이썬, Python, OpenCV]
 ---
