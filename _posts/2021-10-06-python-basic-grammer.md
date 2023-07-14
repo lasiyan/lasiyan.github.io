@@ -1,7 +1,7 @@
 ---
 title: 파이썬 기본 문법 정리
 date: 2021-10-06 00:44:00 +0900
-categories: [Language, Python]
+categories: [Stack, Python]
 tag: [파이썬, Python, 기초 문법]
 ---
 
