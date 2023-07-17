@@ -2,7 +2,7 @@
 title: 윈도우 폴더 강제 삭제
 date: 2022-02-21 13:26:55 +0900
 categories: [Stack, C++]
-tag: [MFC, 윈도우 프로그래밍]
+tag: [MFC]
 ---
 
 MFC 기본 함수 중 RemoveDirectory() 함수는 삭제하려는 폴더 안에 파일 또는 다른 폴더가 존재할 경우 FALSE를 반환합니다.

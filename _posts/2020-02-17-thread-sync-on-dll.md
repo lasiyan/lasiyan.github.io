@@ -2,7 +2,7 @@
 title: 쓰레드를 사용한 동기화 경험 (with. DLL)
 date: 2020-02-17 13:26:55 +0900
 categories: [Stack, C++]
-tag: [MFC, Thread, Synchronize, 동기화, 윈도우 프로그래밍]
+tag: [MFC, Thread, Synchronize, 동기화]
 ---
 
 일반적으로 두 프로그램 간 동기화 중 가장 간단한 방법은 while문을 통해 A 프로그램에서 전달한 신호가 B 프로그램에서 인식될 때 까지 기다린 후, 원하는 커맨드가 전달되면 프로그램을 실행하는 방법이 있습니다.

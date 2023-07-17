@@ -2,7 +2,7 @@
 title: DLL에서 데이터를 전달하는 방법 (Notify)
 date: 2020-08-06 13:26:55 +0900
 categories: [Stack, C++]
-tag: [MFC, OnNotify, 윈도우 프로그래밍]
+tag: [MFC, OnNotify]
 ---
 
 윈도우 환경에서 프로그램을 개발하다 보면 자연스럽게 DLL을 사용하게 되고, 종종 DLL에서 특정 데이터를 전달하여 해당 값을 사용하는 경우가 생깁니다.

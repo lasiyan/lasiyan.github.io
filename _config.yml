@@ -18,9 +18,9 @@ timezone: Asia/Seoul
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 # ↓ --------------------------
 
-title: 발자국 # the main title
+title: LaSiyan # the main title
 
-tagline: 흔적을 기록합니다.. # it will display as the sub-title
+tagline: The trail of my software development # it will display as the sub-title
 
 description: >- # used by seo meta and the atom feed
   lasiyan, mystes, rowen, C++, developement
