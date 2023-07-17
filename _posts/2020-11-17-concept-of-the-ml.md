@@ -1,6 +1,6 @@
 ---
 title: 머신 러닝 기본 개요
-date: 2023-07-12 16:07:00 +0900
+date: 2020-11-17 16:07:00 +0900
 categories: [Stack, A.I]
 tag: [Machine Learning, 머신러닝, AI]
 ---
