@@ -5,7 +5,8 @@ categories: [etc., Utility]
 tag: [FilterKey, 필터키, 메이플스토리]
 ---
 
-# Filter Key Setting
+*Filter Key Setting*
+
 윈도우 환경에서 필터키 설정을 간편하게 도와줍니다 !
 
 ![image](https://github.com/lasiyan/Filter-Key-Setting/assets/135001826/90bb1745-7d3c-4c70-a97f-af6fe7774a53)
