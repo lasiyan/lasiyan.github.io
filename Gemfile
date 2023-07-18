@@ -28,3 +28,5 @@ if RUBY_PLATFORM =~ /linux-musl/
 end
 
 gem 'jekyll-sitemap'
+
+gem 'jekyll-admin', group: :jekyll_plugins
