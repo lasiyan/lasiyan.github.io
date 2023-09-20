@@ -1,5 +1,5 @@
 ---
-title: 다중 클라이언트 서버 테스트
+title: 다중 클라이언트 서버 - 1
 date: 2023-09-20 14:22:12 +0900
 categories: [Stack, C++]
 tag: [C++, Server, "서버"]
@@ -203,3 +203,7 @@ int EchoServer::onReceived(const ConnectedClient* client)
 본문에서는 수신된 메세지를 클라이언트로 재전송 하는 기능을 구현한다.
 
 다음 포스트에서는 실무에서 사용하는 프로젝트들과 유사하게 간단한 Packet을 구성해서 OP-Code에 따른 메세지 처리를 구현할 예정이다.
+
+### 참고
+
+원본 코드: [http](https://github.com/lasiyan/code-partition/tree/master/multi-client-server-1)
