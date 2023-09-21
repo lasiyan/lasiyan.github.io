@@ -206,4 +206,4 @@ int EchoServer::onReceived(const ConnectedClient* client)
 
 ### 참고
 
-원본 코드: [http](https://github.com/lasiyan/code-partition/tree/master/multi-client-server-1)
+원본 코드: [https://github.com/lasiyan/code-partition/tree/master/multi-client-server-1](https://github.com/lasiyan/code-partition/tree/master/multi-client-server-1)
