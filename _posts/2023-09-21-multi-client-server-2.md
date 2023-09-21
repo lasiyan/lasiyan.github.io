@@ -13,7 +13,7 @@ tag: [C++, Server, "서버"]
 
 아래 패킷은 일반적으로 통신을 함에 있어 가장 간단한 패킷 형식 중 하나이다.
 
-[그림](패킷_구조)
+![image](https://github.com/lasiyan/lasiyan.github.io/assets/135001826/c6c7ae60-5af8-434f-8766-86e46a6cefda)
 
 패킷은 크게 Header와 Payload(Body)로 나뉜다. 물론 이 프로젝트에 한에서이다.
 
