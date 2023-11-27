@@ -7,19 +7,19 @@ tag: [C++, Server, "서버"]
 
 > 지난 글: [다중 클라이언트 서버 - 1](https://lasiyan.github.io/posts/multi-client-server/)
 
-이번 포스트는 지난번 다중 클라이언트 처리를 위해 `select`를 활용하여 만든 서버에 `Packet` 개념을 추가한다.
+이번 포스트는 지난번 다중 클라이언트 처리를 위해 `select`를 활용하여 만든 서버에 `Packet` 개념을 추가합니다.
 
 ### 패킷 구조
 
-아래 패킷은 일반적으로 통신을 함에 있어 가장 간단한 패킷 형식 중 하나이다.
+아래 패킷은 일반적으로 통신을 함에 있어 가장 간단한 패킷 형식 중 하나입니다.
 
 ![image](https://github.com/lasiyan/lasiyan.github.io/assets/135001826/c6c7ae60-5af8-434f-8766-86e46a6cefda)
 
-패킷은 크게 Header와 Payload(Body)로 나뉜다. 물론 이 프로젝트에 한에서이다.
+본문에서 사용될 패킷은 크게 Header와 Payload(Body)로 나뉩니다.
 
-`Header`는 이번에 클라이언트가 보낸 메세지가 어떤 목적인지 나타내는 Command와 뒤따라 오는 Payload의 크기를 나타내는 DataSize가 필요하다.
+`Header`는 이번에 클라이언트가 보낸 메세지가 어떤 목적인지 나타내는 Command와 뒤따라 오는 Payload의 크기를 나타내는 DataSize가 필요합니다.
 
-이를 선언하면 다음과 같다
+이를 선언하면 다음과 같습니다.
 
 ```c
 struct PacketHeader {
@@ -28,13 +28,13 @@ struct PacketHeader {
 }
 ```
 
-다음으로 `Payload`는 실제 데이터가 담긴 위치이다.
+다음으로 `Payload`는 실제 데이터가 담긴 위치입니다.
 
-본문에서는 일반 unsigned char 크기의 1바이트 데이터 형식을 사용하지만, 실제로 JSON 또는 YAML 등 다양한 형식이 사용될 수 있다.
+본문에서는 일반 unsigned char 크기의 1바이트 데이터 형식을 사용하지만, 실제로 JSON 또는 YAML 등 다양한 형식이 사용될 수 있습니다.
 
 ### 커맨드 선언
 
-먼저 아래와 같이 protocol.h 파일이 추가되었다. 여기서 패킷과 사용할 OP-Code 목록을 정의한다.
+먼저 아래와 같이 protocol.h 파일이 추가되었습니다. 여기서 패킷과 사용할 OP-Code 목록을 정의합니다.
 
 ```cpp
 enum OP_CODE {
@@ -45,7 +45,7 @@ enum OP_CODE {
 };
 ```
 
-기존에 구현했던 에코 기능과 더불어, 이번에는 클라이언트가 특정 메세지를 전송하면 이것을 저장했다가, 다시 요청하면 반환하는 코드를 작성한다.
+기존에 구현했던 에코 기능과 더불어, 이번에는 클라이언트가 특정 메세지를 전송하면 이것을 저장했다가, 다시 요청하면 반환하는 코드를 작성합니다.
 
 ### 메세지 처리
 
@@ -90,18 +90,18 @@ int MyServer::onReceived(ConnectedClient* client)
 }
 ```
 
-먼저 기존과 눈에 띄게 달라진 점은 siwtch-case문이 추가되었다.
+먼저 기존과 눈에 띄게 달라진 점은 siwtch-case문이 추가되었습니다.
 
-이것은 헤더 패킷의 커맨드에 따라 서버가 어떤 작업을 실행할지 결정한다. 여기에 각 커맨드 별로 처리하고 싶은 코드를 추가할 수 있다.
+이것은 헤더 패킷의 커맨드에 따라 서버가 어떤 작업을 실행할지 결정합니다. 여기에 각 커맨드 별로 처리하고 싶은 코드를 추가할 수 있습니다.
 
-이전 기술한 바와 같이 메세지를 수신 받으면 각 클라이언트 내부에 하나의 변수(client_message)를 생성하고 여기에 값을 저장 후, GET 요청에서 이를 반환한다.
+이전 기술한 바와 같이 메세지를 수신 받으면 각 클라이언트 내부에 하나의 변수(client_message)를 생성하고 여기에 값을 저장 후, GET 요청에서 이를 반환합니다.
 > 물론 이를 위해 ConnectedClient* 의 const를 제거했습니다.
 
 ### 메세지 수신
 
-또한 이전 코드와 다르게 `recvMessage` 함수가 추가되었다.
+또한 이전 코드와 다르게 `recvMessage` 함수가 추가되었습니다.
 
-이것은 수신 받은 데이터에서 Header와 Payload를 분리(파싱)하는 역할을 담당한다. 여기서 주의 깊게 처리되어야 하는 것은 아래와 같다.
+이것은 수신 받은 데이터에서 Header와 Payload를 분리(파싱)하는 역할을 담당합니다. 여기서 주의 깊게 처리되어야 하는 것은 아래와 같습니다.
 
 - 데이터에서 PacketHeader가 존재하는가? (데이터의 크기가 8바이트 이상인가?)
   - command가 유효한 범위인가?
@@ -132,18 +132,18 @@ int MyServer::recvMessage(int socket, PacketHeader*& header, uint8_t*& buffer)
 }
 ```
 
-따라서 정상적인 데이터를 수신할 경우 그 Payload의 데이터가 client_message에 저장되고, 이를 반환한다.
+따라서 정상적인 데이터를 수신할 경우 그 Payload의 데이터가 client_message에 저장되고, 이를 반환합니다.
 
 ### 맹점
 
-코드를 테스트 하다 보면 한 가지 치명적인 문제가 발생한다.
+코드를 테스트 합니다 보면 한 가지 치명적인 문제가 발생합니다.
 
 기존 코드에서 나는 `PACKET_BUFFER_SIZE`를 8192 바이트로 설정하였다.
 
-그런데 만약.. 수신 받은 크기가 이 것보다 클 경우 데이터 손실이 발생한다
+그런데 만약.. 수신 받은 크기가 이 것보다 클 경우 데이터 손실이 발생합니다
 
-먼저, 테스트를 위해 `PACKET_BUFFER_SIZE`를 12 바이트로 변경하였다. 그럼 헤더 패킷의 크기가 8 바이트 고정이므로, 나는 총 4자리의 문자열을 받을 수 있다.
-만약 여기서 5자리 이상의 문자열을 입력할 경우, 데이터 손실이 발생하는 것이다.
+먼저, 테스트를 위해 `PACKET_BUFFER_SIZE`를 12 바이트로 변경하였다. 그럼 헤더 패킷의 크기가 8 바이트 고정이므로, 나는 총 4자리의 문자열을 받을 수 있습니다.
+만약 여기서 5자리 이상의 문자열을 입력할 경우, 데이터 손실이 발생하는 것입니다.
 
 ```
 // 실행 결과 (에코, 수신: "12345")
@@ -151,7 +151,7 @@ echo : 1234
 192.168.0.241 : invalid header or size (read: 1)  // 마지막 1바이트가 누락됨
 ```
 
-따라서 아래 코드와 같이 수정하여 Header의 datasize에 입력된 값 만큼 데이터가 수신될 때까지 대기하고, 이를 처리하는 코드로 변경한다.
+따라서 아래 코드와 같이 수정하여 Header의 datasize에 입력된 값 만큼 데이터가 수신될 때까지 대기하고, 이를 처리하는 코드로 변경합니다.
 
 ```cpp
 int MyServer::recvMessage(ConnectedClient* sClient, PacketHeader*& header, uint8_t*& buffer)
@@ -251,10 +251,10 @@ int MyServer::recvMessage(ConnectedClient* sClient, PacketHeader*& header, uint8
 }
 ```
 
-Header의 datasize를 기준으로 수신 받아야 하는 데이터 크기를 가변적으로 조절한다.
+Header의 datasize를 기준으로 수신 받아야 하는 데이터 크기를 가변적으로 조절합니다.
 
 여기서 데이터 자체가 최대 수신할 수 있는 버퍼의 크기(`PACKET_BUFFER_SIZE`)를 초과하는 데이터가 수신될 경우
-데이터 누락 방지를 위해 `recv_buffer_over` 플래그를 `true`로 변경하고 잔여 데이터를 수신 받는다.
+데이터 누락 방지를 위해 `recv_buffer_over` 플래그를 `true`로 변경하고 잔여 데이터를 수신 받습니다.
 
 
 ### 저장소
