@@ -1,7 +1,7 @@
 ---
 title: Ajax를 통한 데이터베이스 사용 - JSP
 date: 2019-02-19 00:44:00 +0900
-categories: [Stack, Web]
+categories: [Stack, Network]
 tag: [웹개발, Web, Ajax, JSP]
 ---
 

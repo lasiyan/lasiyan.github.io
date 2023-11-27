@@ -1,7 +1,7 @@
 ---
 title: 다중 클라이언트 서버 - 1
 date: 2023-09-20 14:22:12 +0900
-categories: [Stack, C++]
+categories: [Stack, Network]
 tag: [C++, Server, "서버"]
 ---
 

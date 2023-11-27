@@ -1,7 +1,7 @@
 ---
 title: 스프링 개념과 동작 원리 - Spring
 date: 2019-02-21 00:44:00 +0900
-categories: [Stack, Web]
+categories: [Stack, Network]
 tag: [웹개발, Web, Spring]
 ---
 

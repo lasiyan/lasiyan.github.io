@@ -1,5 +1,5 @@
 ---
-title: C++20 기능 정리 - 개념
+title: C++20 기능 정리 - 서론
 date: 2023-11-27 09:50:00 +0900
 categories: [Stack, C++]
 tag: [C++, C++20, stdcpp]
